@@ -47,7 +47,7 @@ func installExportPipeline(ctx context.Context) func() {
 			// 请设置对应的环境变量并将YOUR SERVICE NAME，YOUR SERVICE NAMESPACE，
 			// YOUR SERVICE DEPLOY ENVIRONMENT设置成对应的服务名，命名空间，环境。默认Default
 			// 有相同的名称，命名空间，及环境的观测对象被认为是同一个服务，应用观测会自动对接入服务进行服务名的拼接，格式为{服务名}.{命名空间}.{环境}
-			semconv.ServiceNameKey.String("server3"),
+			semconv.ServiceNameKey.String("server2"),
 			semconv.ServiceNamespaceKey.String("default"),
 			semconv.DeploymentEnvironmentKey.String("test"),
 		),
